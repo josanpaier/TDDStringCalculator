@@ -41,4 +41,16 @@ class StringCalculatorTest {
         //Assert
         assertEquals(3, result);
     }
+
+    @Test
+    void add_returnSelfNumber_whenStringNumberHasUnknownAmountOfNumbers() {
+        //Arrange
+        String numbers = "2,4,6,8";
+
+        //Act
+        int result = StringCalculator.add(numbers);
+
+        //Assert
+        assertEquals(20, result);
+    }
 }

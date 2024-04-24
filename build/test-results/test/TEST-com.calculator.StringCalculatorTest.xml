@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.calculator.StringCalculatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-03-02T23:02:05" hostname="DESKTOP-L0C72P0" time="0.02">
+<testsuite name="com.calculator.StringCalculatorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-04-24T11:19:33" hostname="DSK4358" time="0.015">
   <properties/>
-  <testcase name="add_returnSelfNumber_whenStringNumberHasOnlyOneNumber()" classname="com.calculator.StringCalculatorTest" time="0.015"/>
+  <testcase name="add_returnSelfNumber_whenStringNumberHasOnlyOneNumber()" classname="com.calculator.StringCalculatorTest" time="0.011"/>
   <testcase name="add_return0_whenStringNumbersIsEmpty()" classname="com.calculator.StringCalculatorTest" time="0.001"/>
-  <testcase name="add_returnSelfNumber_whenStringNumberHasOnlyTwoNumber()" classname="com.calculator.StringCalculatorTest" time="0.001"/>
+  <testcase name="add_returnSelfNumber_whenStringNumberHasOnlyTwoNumber()" classname="com.calculator.StringCalculatorTest" time="0.0"/>
+  <testcase name="add_returnSelfNumber_whenStringNumberHasUnknownAmountOfNumbers()" classname="com.calculator.StringCalculatorTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

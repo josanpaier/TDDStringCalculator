@@ -12,8 +12,25 @@ public class StringCalculator {
             return parseInt(numbers);
         }
 
+//        var charNumbers = numbers.split(",");
+//        return parseInt(charNumbers[0]) + parseInt(charNumbers[1]);
+
+//        var charNumbers = numbers.split(",");
+//        var comp = charNumbers.length;
+//        var soma = 0;
+//        for(int i = 0; i < charNumbers.length; i++) {
+//            soma += parseInt(charNumbers[i]);
+//        }
+//        return soma;
+
         var charNumbers = numbers.split(",");
-        return parseInt(charNumbers[0]) + parseInt(charNumbers[1]);
+        //var comp = charNumbers.length;
+        var soma = 0;
+        for(int i = 0; i < charNumbers.length; i++) {
+            soma += parseInt(charNumbers[i]);
+        }
+        return soma;
+
     }
 
 }
