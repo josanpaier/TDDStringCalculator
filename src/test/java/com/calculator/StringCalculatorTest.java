@@ -31,7 +31,7 @@ class StringCalculatorTest {
     }
 
     @Test
-    void add_returnSelfNumber_whenStringNumberHasOnlyTwoNumber() {
+    void add_returnSum_whenStringNumberHasOnlyTwoNumber() {
         //Arrange
         String numbers = "1,2";
 
@@ -43,7 +43,7 @@ class StringCalculatorTest {
     }
 
     @Test
-    void add_returnSelfNumber_whenStringNumberHasUnknownAmountOfNumbers() {
+    void add_returnSum_whenStringNumberHasUnknownAmountOfNumbers() {
         //Arrange
         String numbers = "2,4,6,8";
 
