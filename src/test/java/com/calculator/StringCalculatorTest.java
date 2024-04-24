@@ -53,4 +53,16 @@ class StringCalculatorTest {
         //Assert
         assertEquals(20, result);
     }
+
+    @Test
+    void add_returnSum_whenStringNumberHasNewLines() {
+        //Arrange
+        String numbers = "2,4\n6,8\n3,7\n5,5";
+
+        //Act
+        int result = StringCalculator.add(numbers);
+
+        //Assert
+        assertEquals(40, result);
+    }
 }

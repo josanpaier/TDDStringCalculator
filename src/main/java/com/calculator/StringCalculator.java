@@ -12,14 +12,25 @@ public class StringCalculator {
             return parseInt(numbers);
         }
 
-        var charNumbers = numbers.split(",");
+        if (numbers.contains("\n")) {
+            var semLinha = numbers.replace("\n",",");
 
-        var soma = 0;
-        for(int i = 0; i < charNumbers.length; i++) {
-            soma += parseInt(charNumbers[i]);
+            return calc(semLinha);
+        } else {
+            return calc(numbers);
         }
-        return soma;
 
+    }
+
+    public static int calc(String entry) {
+
+        var charNumbers = entry.split(",");
+
+        var sum = 0;
+        for(int i = 0; i < charNumbers.length; i++) {
+            sum += parseInt(charNumbers[i]);
+        }
+        return sum;
     }
 
 }
