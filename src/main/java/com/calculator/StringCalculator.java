@@ -8,7 +8,7 @@ public class StringCalculator {
             return 0;
         }
 
-        if (!numbers.contains(",")) {
+        if (!numbers.contains(",") & !numbers.contains("\n")) {
             return parseInt(numbers);
         } else if (numbers.contains("\n")) {
             var noLine = numbers.replace("\n",",");
