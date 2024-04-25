@@ -10,16 +10,12 @@ public class StringCalculator {
 
         if (!numbers.contains(",")) {
             return parseInt(numbers);
-        }
-
-        if (numbers.contains("\n")) {
-            var semLinha = numbers.replace("\n",",");
-
-            return calc(semLinha);
+        } else if (numbers.contains("\n")) {
+            var noLine = numbers.replace("\n",",");
+            return calc(noLine);
         } else {
             return calc(numbers);
         }
-
     }
 
     public static int calc(String entry) {

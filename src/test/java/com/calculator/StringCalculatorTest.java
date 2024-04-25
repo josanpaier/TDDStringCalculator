@@ -65,4 +65,16 @@ class StringCalculatorTest {
         //Assert
         assertEquals(40, result);
     }
+
+    @Test
+    void add_returnSum_whenStringNumberHasNumberLineNumber() {
+        //Arrange
+        String numbers = "1\n2";
+
+        //Act
+        int result = StringCalculator.add(numbers);
+
+        //Assert
+        assertEquals(3, result);
+    }
 }
