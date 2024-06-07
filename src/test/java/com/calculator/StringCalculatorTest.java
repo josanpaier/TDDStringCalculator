@@ -67,7 +67,7 @@ class StringCalculatorTest {
     }
 
     @Test
-    void add_returnSum_whenStringNumberHasNumberLineNumber() {
+    void add_returnSum_whenStringNumberHasNumberLineNumber1() {
         //Arrange
         String numbers = "1\n2";
 
@@ -77,4 +77,31 @@ class StringCalculatorTest {
         //Assert
         assertEquals(3, result);
     }
+
+    @Test
+    void add_returnSum_whenStringNumberHasNumberLineNumber2() {
+        //Arrange
+        String numbers = "1\n2,3";
+
+        //Act
+        int result = StringCalculator.add(numbers);
+
+        //Assert
+        assertEquals(6, result);
+    }
+
+    /*
+    @Test
+    void add_returnSum_whenStringNumberHasDifferentDelimiters() {
+        //Arrange
+        String numbers = "//;\n1;2";
+
+        //Act
+        int result = StringCalculator.add(numbers);
+
+        //Assert
+        assertEquals(3, result);
+    }
+     */
+
 }
